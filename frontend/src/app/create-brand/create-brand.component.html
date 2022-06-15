@@ -1,0 +1,17 @@
+<div class="form-style">
+  <form (ngSubmit)="postBrand(brand)" #brandForm="ngForm">
+    <div>
+      <label for="brand"><b>Бренд: </b></label>
+      <input type="text"
+             placeholder="Ведите название бренда"
+             style="width: 200px"
+             id="brand" name="brand"
+             [(ngModel)]="brand.brand"
+             required #brand.brand ="ngModel"/>
+      <div [hidden]="!(brand.brand == '')" class="alert-hidden">Впишите бренд!</div>
+      <div [hidden]="!isInBase" class="alert-hidden">Такой бренд уже есть в базе!</div>
+
+    </div>
+    <button type="submit" [disabled]="!brandForm.form.valid" class="submit-button">Отправка</button>
+  </form>
+</div>

@@ -1,0 +1,37 @@
+<div class="central-field">
+  <div>
+    <aside>
+      <details open>
+        <summary>Бренды</summary>
+        <mat-checkbox *ngFor="let brand of brands">{{brand.brand}}</mat-checkbox>
+      </details>
+      <details open>
+        <summary>Категории</summary>
+        <mat-checkbox *ngFor="let category of categories">{{category.category}}</mat-checkbox>
+      </details>
+      <details open>
+        <summary>Форматы</summary>
+        <mat-checkbox *ngFor="let format of formats">{{format.length}} x {{format.width}}</mat-checkbox>
+      </details>
+      <details open>
+        <summary>Толщины</summary>
+        <mat-checkbox *ngFor="let thickness of thicknesses">{{thickness.thickness}}</mat-checkbox>
+      </details>
+    </aside>
+    <div style="display: inline-block">
+        <table>
+          <tr>
+            <th>brand</th>
+            <th> category</th>
+            <th>decor</th>
+          </tr>
+          <tr *ngFor="let material of materials">
+            <td>{{material.category?.category}} {{material.brand?.brand}} {{material.decor?.decorArticle}} {{material.texture?.texture}} {{material.thickness?.thickness}}мм ({{material.format?.length}}x{{material.format?.width}}) {{material.decor?.decorName}}</td>
+
+          </tr>
+        </table>
+    </div>
+  </div>
+</div>
+
+

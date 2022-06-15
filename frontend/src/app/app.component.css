@@ -1,0 +1,91 @@
+#wrapper {
+  width: 70%;
+  margin: 0 auto;
+  align-content: center;
+}
+
+nav {
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.button-left {
+  background: firebrick;
+  height: 40px;
+  color: aliceblue;
+  border: none;
+  border-bottom-left-radius: 15px;
+  font-weight: bold;
+}
+
+.button-left:active {
+  background: darkred;
+}
+
+.button-center {
+  background: firebrick;
+  height: 40px;
+  color: aliceblue;
+  border: none;
+  font-weight: bold;
+}
+
+.button-center:active {
+  background: darkred;
+}
+
+.button-right {
+  background: firebrick;
+  height: 40px;
+  color: aliceblue;
+  border: none;
+  border-top-right-radius: 15px;
+  font-weight: bold;
+}
+
+.button-right:active {
+  background: darkred;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-menu {
+  width: 90px;
+  background: firebrick;
+  height: 35px;
+  color: aliceblue;
+  border: none;
+  display: none;
+  position: absolute;
+  background: firebrick;
+  z-index: 1;
+}
+
+.dropdown-menu button {
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu button:hover {
+  background: red;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.menu-button {
+  background: firebrick;
+  width: 90px;
+  height: 40px;
+  color: aliceblue;
+  border: none;
+}
+

@@ -1,0 +1,17 @@
+<div class="form-style">
+  <form (ngSubmit)="postCategory(category)" #brandForm="ngForm">
+    <div>
+      <label for="category"><b>Категория: </b></label>
+      <input type="text"
+             placeholder="Ведите название категории"
+             style="width: 200px"
+             id="category" name="category"
+             [(ngModel)]="category.category"
+             required #category.category ="ngModel"/>
+      <div [hidden]="!(category.category == '')" class="alert-hidden">Впишите категорию!</div>
+      <div [hidden]="!isInBase" class="alert-hidden">Такая категория уже есть в базе!</div>
+
+    </div>
+    <button type="submit" [disabled]="!brandForm.form.valid" class="submit-button">Отправка</button>
+  </form>
+</div>

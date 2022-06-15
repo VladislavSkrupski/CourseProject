@@ -1,0 +1,24 @@
+.central-field {
+  width: 70%;
+  margin: 0 auto;
+  alignment: top;
+}
+
+.sidebar-div {
+  display: grid;
+}
+
+aside {
+  margin: 10px;
+  width: fit-content;
+  display: inline-block;
+}
+
+details {
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 5px;
+  width: 160px;
+  display: grid;
+  margin: 10px;
+}

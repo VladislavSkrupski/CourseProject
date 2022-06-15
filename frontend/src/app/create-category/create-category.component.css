@@ -1,0 +1,24 @@
+.form-style {
+  width: fit-content;
+  margin: 0 auto;
+  align-content: center;
+  padding: 30px;
+}
+
+.form-style div {
+  padding-bottom: 10px;
+}
+
+.alert-hidden {
+  background: rgba(168, 93, 92, 0.28);
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.submit-button {
+  width: 100%;
+  margin: 0 auto;
+
+}
